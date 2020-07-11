@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageView_actualiza"
+        android:layout_width="133dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/label_nombre_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_actualiza"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtVinoNombre_acualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_actualiza"
+        app:layout_constraintTop_toBottomOf="@+id/label_nombre_actualiza" />
+
+    <EditText
+        android:id="@+id/txt_denominacionOrigen_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_actualiza"
+        app:layout_constraintTop_toBottomOf="@+id/label_denominacion_actualiza"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:id="@+id/label_denominacion_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Denominación Origen:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_actualiza"
+        app:layout_constraintTop_toBottomOf="@+id/txtVinoNombre_acualiza" />
+
+    <TextView
+        android:id="@+id/label_tipoVino_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Tipo:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_actualiza" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_actualiza"
+        android:layout_width="183dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_tipoVino_actualiza">
+
+        <RadioButton
+            android:id="@+id/btn_tinto_actualiza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tinto" />
+
+        <RadioButton
+            android:id="@+id/btn_blanco_actualiza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blanco" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_probado_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Probado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_actualiza" />
+
+    <TextView
+        android:id="@+id/txt_valoracion_actualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Valoración"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_probado_actualiza" />
+
+    <RatingBar
+        android:id="@+id/barra_valoracion_actualiza"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valoracion_actualiza" />
+
+    <Button
+        android:id="@+id/btn_borrar_modifica"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="25dp"
+        android:text="BORRAR"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_valoracion_actualiza" />
+
+    <Button
+        android:id="@+id/btn_aceptar_actualiza"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:text="ACEPTAR"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_valoracion_actualiza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
